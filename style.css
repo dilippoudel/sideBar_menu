@@ -1,0 +1,93 @@
+.body {
+  margin: 0 0 0 0;
+}
+.menu {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding: 8px;
+}
+.first,
+.second,
+.third {
+  height: 2px;
+  width: 16px;
+  border-radius: 10%;
+  background-color: rgb(17, 97, 182);
+  margin-top: 3px;
+  cursor: pointer;
+  animation-name: menu_expand_collapse;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.side {
+  background-color: #eee;
+  width: 50%;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  visibility: hidden;
+}
+.sidebar {
+  display: flex;
+}
+.links > div {
+  cursor: pointer;
+  margin-top: 36px;
+  padding: 12px;
+  font-size: 24px;
+  color: rgba(78, 73, 73, 0.85);
+}
+.close_icon {
+  color: red;
+  font-size: 72px;
+  margin-left: 70%;
+  cursor: pointer;
+}
+img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  cursor: pointer;
+}
+.media_links {
+  display: flex;
+  margin-top: 72px;
+}
+.media_links > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 48px;
+}
+@keyframes menu_expand_collapse {
+  0% {
+    padding: 1px;
+    width: 17px;
+    height: 2px;
+  }
+  25% {
+    padding: 2px;
+    width: 18px;
+    height: 3px;
+  }
+  50% {
+    padding: 3px;
+    width: 19px;
+    height: 4px;
+  }
+  75% {
+    padding: 2px;
+    width: 18px;
+    height: 3px;
+  }
+  100% {
+    padding: 1px;
+    width: 17px;
+    height: 2px;
+  }
+}
